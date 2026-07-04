@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Counter-Strike</title>
+    <!-- Points to static/css/csnet.css -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/downloads.css') }}">
+</head>
+
+<body>
+
+<div class="pic text-center">
+    <script src="{{ url_for('static', filename='js/imgrot.js') }}"></script>
+    <noscript>
+        <img src="{{ url_for('static', filename='img/left.gif') }}" alt="Header Image">
+    </noscript>
+</div>
+
+<p></p>
+
+<table class="header-bg" cellspacing="0" cellpadding="0" border="0">
+    <tr>
+        <td class="header-mid" colspan="2" width="50%" height="22">
+            &nbsp;<a href="/">Main</a> |
+            <a href="template">About</a> |
+            <a href="template">Screenshots</a> |
+            <a href="template">Forums</a> |
+            <a href="downloads">Downloads</a>
+        </td>
+        <td class="header-mid" width="50%" align="right">
+            <a href="http://www.counter-strike.net/">www.counter-strike.net</a>
+        </td>
+    </tr>
+</table>
+
+<table class="header-bg" cellspacing="0" cellpadding="0" border="0">
+    <tr>
+        <td class="header-links" width="100%">
+            <a href="http://www.counter-strike.net/"><img src="{{ url_for('static', filename='img/main.jpg') }}" border="0" alt="Main"></a>
+        </td>
+    </tr>
+    <tr>
+        <td class="header-mid divider-text text-center" width="100%" height="23">
+            <b>A Counter-Terrorism Half-Life Modification</b>
+        </td>
+    </tr>
+</table>
+
+<p></p>
+
+<div class="text-center">
+    <br>
+    <table align="center" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+            <td height="60">
+                <img src="{{ url_for('static', filename='img/left.gif') }}" alt="">
+                
+                <a id="AdBannerLink" href="https://archmania.lain.onl/" target="_blank"><img id="AdBannerImg" src="{{ url_for('static', filename='img/ads/ArchMainiaAD.gif') }}" height="60px" width="auto" border="0" alt=""></a>
+
+                <img src="{{ url_for('static', filename='img/right.gif') }}" alt="">
+                <a href="http://www.gamecenter.com/Cga/?st.gc.fd..cga">
+                    <img src="{{ url_for('static', filename='img/shared/cga_vert_t.gif') }}" alt="CNET Gamecenter Alliance" border="0">
+                </a>
+            </td>
+        </tr>
+    </table>
+    <p></p>
+</div>
+
+<p></p>
+
+<table border="0" cellpadding="4" cellspacing="0" width="98%" align="center">
+    <tr>
+        <td valign="top" align="center" width="140">
+            <table width="100" border="0" cellpadding="2" cellspacing="0">
+                <tr>
+                    <td valign="top">
+                        <br><br><br><br>
+                        <div class="newshead">[Site Navigation]</div>
+                        <span class="divider-text">- - - - - - - - - - - - -</span><br>
+
+                        <div class="news">
+                            <b>&gt;</b> <a href="template">About CS</a><br>
+                            <b>&gt;</b> <a href="template">The CS Team</a><br>
+                            <b>&gt;</b> <a href="template">The FAQ</a><br>
+                            <b>&gt;</b> <a href="template">Misc. Info.</a><br>
+                            <b>&gt;</b> <a href="template">The CS Maps</a><br>
+                            <b>&gt;</b> <a href="template">The CS Weapons</a><br>
+                            <b>&gt;</b> <a href="template">CS Mapping</a><br>
+                            <b>&gt;</b> <a href="template">Screenshots</a><br>
+                            <b>&gt;</b> <a href="template">Hosted Sites</a><br>
+                            <b>&gt;</b> <a href="template">CS Forums</a><br>
+                            <b>&gt;</b> <a href="downloads">Downloads</a>
+                        </div>
+
+                        <p></p>
+                        <div class="newshead">[Hosted Sites]</div>
+                        <span class="divider-text">- - - - - - - - - - - - -</span><br>
+
+                        <div class="news"><a href="http://csnation.counter-strike.net/">CSNation</a></div>
+                        <span class="divider-text">The most up to date CS news site in the land.<br>- - - - - - - - - - - - - -</span>
+
+                        <div class="news"><a href="http://skins.counter-strike.net/">CSSkins</a></div>
+                        <span class="divider-text">The official CS skins site.<br>- - - - - - - - - - - - - -</span>
+
+                        <div class="news"><a href="http://server.counter-strike.net/">Counter-Server</a></div>
+                        <span class="divider-text">The complete CS server admin source of info.<br>- - - - - - - - - - - - - -</span>
+
+                        <div class="news"><a href="http://art.counter-strike.net/">Counter-Strike Art</a></div>
+                        <span class="divider-text">View art from the CS Art community.<br>- - - - - - - - - - - - - -</span>
+
+                        <div class="news"><a href="http://enquirer.counter-strike.net/">CS-National Enquirer</a></div>
+                        <span class="divider-text">The CS humor and mock news site.<br>- - - - - - - - - - - - - -</span>
+
+                        <div class="news"><a href="http://bot.counter-strike.net/realbot/">RealBot</a></div>
+                        <span class="divider-text">Advanced Counter-Strike bot.<br>- - - - - - - - - - - - - -</span>
+
+                        <div class="news"><a href="http://bot.counter-strike.net/android/">Android Bot</a></div>
+                        <span class="divider-text">Waypoint based CS bot.<br>- - - - - - - - - - - - - -</span>
+
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td valign="top" align="center" width="40">
+            <br>
+            <img src="{{ url_for('static', filename='img/col_wor.gif') }}" width="40" height="1300" alt="">
+        </td>
+
+        <td valign="top" id="mid">
+            <center>
+                <!--U can do anything here if its the About page or so on there all pretty much the same i would recommend to look at the Frontend folder and look how the orginal site did serten stuff!-->
+                <div class="newshead">[Template]</div>
+                <p>Template if u dont understand it this is still a tamplate. <br> Every site that has this Template site is the same so i leave it up 2 the user to do what they want with it! <br> This includeas stuff like the About Me page!!</p>
+            </center>
+        </td>
+
+        <td valign="top" align="center" width="40">
+            <br>
+            <img src="{{ url_for('static', filename='img/col_wor.gif') }}" width="40" height="1300" alt="">
+        </td>
+
+        <td valign="top" width="100" align="left">
+            <div class="text-center"><img src="{{ url_for('static', filename='img/flash.gif') }}" alt="Flash"></div>
+            <div class="newshead">[Latest Files]</div>
+            <span class="divider-text">- - - - - - - - - - - - -</span><br>
+
+            <div class="news">
+                <a href="downloads">csb71full.exe</a><br>
+                <span class="divider-text">Beta 7.1 full windows installation.<br>- - - - - - - - - - - - - -</span>
+            </div><br>
+
+            <div class="news">
+                <a href="downloads">csb7071.exe</a><br>
+                <span class="divider-text">Beta 7.0 to 7.1 updater.<br>- - - - - - - - - - - - - -</span>
+            </div><br>
+
+            <div class="news">
+                <a href="downloads">cs_beta71.tar.gz</a><br>
+                <span class="divider-text">Full beta 7.1 linux server port for server ops.<br>- - - - - - - - - - - - - -</span>
+            </div><br>
+
+            <div class="news">
+                <a href="downloads">cs_beta7071.tar.gz</a><br>
+                <span class="divider-text">Beta 7.0 to 7.1 Linux Server Upgrade.<br>- - - - - - - - - - - - - -</span>
+            </div><br>
+
+            <div class="news">
+                <a href="ftp://ftp.counter-strike.net/pub/csm/cstrike_tab.zip">Counter-Strike Gamespy Tab</a><br>
+                <span class="divider-text">Custom game tab used in Gamespy to filter only CS games.<br>- - - - - - - - - - - - - -</span>
+            </div><br>
+
+            <div class="news">
+                <a href="ftp://ftp.counter-strike.net/pub/csm/cstrikefgd.zip">CS Mapping .Fgd file</a><br>
+                <span class="divider-text">File for CS mappers to utilize custom CS entities.<br>- - - - - - - - - - - - - -</span>
+            </div><br>
+
+            <p></p>
+            <table border="0" cellpadding="0" cellspacing="0" width="125" height="125">
+                <tr>
+                    <td><br><a href="http://service.bfast.com/bfast/click?bfmid=1476905&siteid=29942293&bfpage=play_games"><img src="{{ url_for('static', filename='img/shared/gcplaygames125x125.gif') }}" width="125" height="125" border="0" alt="Play Games!"></a></td>
+                </tr>
+            </table>
+
+            <p></p>
+            <div class="newshead">[Network]</div>
+            <span class="divider-text">- - - - - - - - - - - - -</span><br>
+            <div class="news text-center">
+                <br>
+                <a href="http://www.stomped.com"><img src="{{ url_for('static', filename='img/stom.gif') }}" border="0" alt="Hosted By STOMPED"></a><br><br>
+                CS IRC:<br>
+                #counterstrike<br>
+                Gamesnet
+            </div>
+        </td>
+    </tr>
+</table>
+
+<table class="footer-bg" width="100%" cellspacing="0" cellpadding="0" border="0">
+    <tr>
+        <td class="header-mid" width="100%" height="22">
+            &nbsp;<a href="/">Main</a> |
+            <a href="template">About</a> |
+            <a href="template">Screenshots</a> |
+            <a href="template">Forums</a> |
+            <a href="downloads">Downloads</a> | - &copy; 1999-2000 : Counter-Strike -- [html &amp; design by <a href="mailto:cliffe@counter-strike.net">Cliffe</a>] [<a href="ftp://ftp.counter-strike.net/pub/csm/csfont.zip">CS Font</a>] [<a href="link">Linking</a>]
+        </td>
+    </tr>
+</table>
+
+</body>
+
+<script src="{{ url_for('static', filename='js/AdBanner.js') }}"></script>
+</html>

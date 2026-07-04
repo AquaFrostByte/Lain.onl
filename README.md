@@ -1,1 +1,1 @@
-
+Publish_news is to auto make articals

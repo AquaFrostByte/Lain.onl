@@ -1,0 +1,161 @@
+/* These are as close to the original as possible atleast from how i thought it sgould be!! */
+body {
+    background-color: #000000;
+    color: white;
+    margin: 0 auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1200px;  /* Caps the width to 1200px for an old look if u want a true original delete this line!*/
+}
+
+/* Global Typography & Elements */
+.text {
+    font-family: verdana, sans-serif;
+    font-size: 8pt;
+    color: white;
+}
+
+.small {
+    font-family: verdana, sans-serif;
+    font-size: 8pt;
+    color: white;
+}
+
+.pic {
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+    margin: 0 auto;
+}
+
+.pic img {
+    position: absolute;
+    top: 20px;
+    left: 1px;
+    pointer-events: none;
+    user-select: none;
+}
+.text-center { 
+    text-align: center; 
+}
+
+/* Global Links */
+a {
+    font-family: verdana, sans-serif;
+    color: #bc2424;
+    text-decoration: none;
+}
+
+a:visited, 
+a:active {
+    color: #8f1515;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Specific Link Classes */
+a.cnet { 
+    color: blue; 
+}
+
+a.cnet:hover { 
+    color: blue; 
+}
+
+/* Header & Table Elements */
+.header-bg { 
+    background-color: #000000; 
+    width: 100%; 
+} 
+
+.header-mid { 
+    font-size: 12px; 
+    font-weight: bold; 
+    background-color: #131313;
+    border: 1px solid #131313;
+}
+
+.header-mid a {
+    color: #ffffff;
+    margin-right: 4px;
+}
+
+.header-links img { 
+    height: 100px; 
+    width: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+/* Legacy Table Header Classes (Consolidated) */
+td.HeaderLinks {
+    background-color: #001500;
+    border: 0px;
+    color: #ffffff;
+}
+
+td.Headermid {
+    background-color: #313131;
+    border: 0px;
+    color: #ffffff;
+}
+
+/* News Section */
+.news-container {
+    width: 85%;
+    margin: 0 auto 20px auto;
+}
+
+.newshead {
+    font-family: arial, sans-serif;
+    font-size: 12pt;
+    color: #ff1e1e;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.news {
+    font-family: verdana, sans-serif;
+    font-size: 12px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.NewsImg {
+    width: 100%;
+    max-width: 85%;
+    height: 200px;
+    object-fit: contain; /* Shrinks or grows the image to fit inside the box without cropping */
+}
+
+/* Footer & Miscellaneous */
+.divider-text {
+    font-size: 10px;
+    font-family: verdana, sans-serif;
+    color: #b0b0b0;
+}
+
+.footer-bg { 
+    background-color: #808080; 
+} /* Fixed missing closing brace here */
+
+ul.patch-notes {
+    font-size: 12px;
+    font-family: verdana, sans-serif;
+    margin-top: 5px;
+}
+
+#RotImg {
+    width: 200px;
+}
+
+#DownloadImg {
+    width: 150px;
+}
+
+#x88 {
+    width: 88px;
+}
