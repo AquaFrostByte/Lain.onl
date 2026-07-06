@@ -1,8 +1,14 @@
 import os
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template, redirect, url_for
 from bs4 import BeautifulSoup
+from flask_sqlalchemy import SQLAlchemy
+from datetime import datetime
 
 app = Flask(__name__)
+#SQL Setup
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///guestbook.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+db = SQLAlchemy(app)
 
 # Fetch the secret key from environment variables
 API_KEY = os.getenv("NEWS_API_KEY")
@@ -19,9 +25,31 @@ def require_api_key(f):
             return jsonify({"error": "Unauthorized. Invalid or missing API key."}), 401
         return f(*args, **kwargs)
     return decorated
-@app.route('/')
+
+class GuestbookEntry(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(50), nullable=False)
+    message = db.Column(db.String(200), nullable=False)
+    date_posted = db.Column(db.DateTime, default=datetime.utcnow)
+
+with app.app_context():
+    db.create_all()
+
+@app.route('/', methods=['GET', 'POST'])
 def index():
-    return render_template('index.html')
+    if request.method == 'POST':
+        name = request.form.get('name')
+        message = request.form.get('message')
+        
+        if name and message:
+            new_entry = GuestbookEntry(name=name, message=message)
+            db.session.add(new_entry)
+            db.session.commit()
+            return redirect(url_for('index'))
+            
+    # .limit(3) ensures we only grab the last 3 entries for the homepage
+    recent_entries = GuestbookEntry.query.order_by(GuestbookEntry.date_posted.desc()).limit(3).all()
+    return render_template('index.html', entries=recent_entries)
 
 @app.route('/template')
 def template():
@@ -30,6 +58,13 @@ def template():
 @app.route('/downloads')
 def downloads():
     return render_template('downloads.html')
+
+@app.route('/entries')
+def all_entries():
+    all_entries = GuestbookEntry.query.order_by(GuestbookEntry.date_posted.desc()).all()
+    return render_template('all_entries.html', entries=all_entries)
+
+#API Endpoints 
 
 @app.route('/api/news', methods=['POST'])
 @require_api_key

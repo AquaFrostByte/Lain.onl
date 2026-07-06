@@ -26,19 +26,19 @@
             <a href="downloads">Downloads</a>
 </td>
 <td align="right" class="header-mid" width="50%">
-<a href="https://www.lain.onl/">Lain.onl</a>
+<a href="https://lain.onl/">Lain.onl</a>
 </td>
 </tr>
 </table>
 <table border="0" cellpadding="0" cellspacing="0" class="header-bg">
 <tr>
 <td class="header-links" width="100%">
-<a href="https://www.lain.onl/"><img alt="Main" border="0" src="{{ url_for('static', filename='img/MainBannerTest.gif') }}"/></a>
+<a href="https://lain.onl/"><img alt="Main" border="0" src="{{ url_for('static', filename='img/MainBannerTest.gif') }}"/></a>
 </td>
 </tr>
 <tr>
 <td class="header-mid divider-text text-center" height="23" width="100%">
-<b>A Counter-Terrorism Half-Life Modification</b>
+<b>We are all connected</b>
 </td>
 </tr>
 </table>
@@ -62,7 +62,7 @@
 <p></p>
 <table align="center" border="0" cellpadding="4" cellspacing="0" width="98%">
 <tr>
-<td align="center" valign="top" width="140">
+<td align="center" valign="top" width="140" style="max-width: 150px;">
 <table border="0" cellpadding="2" cellspacing="0" width="140">
 <tr>
 <td valign="top">
@@ -73,6 +73,7 @@
 <b>&gt;</b> <a href="/">Home</a><br/>
 <b>&gt;</b> <a href="downloads">Downloads</a><br/>
 <b>&gt;</b> <a href="Cstrike:S">CStrike: Source</a><br/>
+<b>&gt;</b> <a href="entries">Guestbook</a><br/>
 </div>
 <p></p>
 <div class="newshead">[Hosted Sites]</div>
@@ -91,6 +92,30 @@
 <span class="divider-text">A Refrech of the originl Counter Strike Website.<br/>- - - - - - - - - - - - - -</span>
 <div class="news"><a href="https://jelly.lain.onl">Jellyfin</a></div>
 <span class="divider-text">A Jellyfin Server. (Closed)<br/>- - - - - - - - - - - - - -</span>
+<div class="newshead">[Guest Book]</div>
+<span class="divider-text">- - - - - - - - - - - - -</span><br/>
+<div class="news">
+<form action="/" method="POST" id="guestbook">
+    <input type="text" name="name" placeholder="Your Name..." required><br/>   
+    <textarea name="message" placeholder="Sign guestbook..." required></textarea><br/>
+    <input type="image" src="{{ url_for('static', filename='img/Submitbutton.gif') }}" alt="Submit" 
+       style="width: 80px; margin-top: 5px; cursor: pointer; transition: 0.2s;"
+       onmouseover="this.style.filter='brightness(1.2)';" 
+       onmouseout="this.style.filter='none';">
+    <br>
+    <b>&gt;</b> <a href="entries">View All Guestbook Entries</a><br/>
+</form>
+<div class="recent-posts">
+    <h3>[Latest Shoutouts]</h3>
+    {% for entry in entries %}
+        <div class="entry">
+            <strong>{{ entry.name }}:</strong> {{ entry.message }}
+        </div>
+    {% else %}
+        <div class="entry">No entries yet!</div>
+    {% endfor %}
+</div>
+</div>
 </td>
 </tr>
 </table>
@@ -102,18 +127,34 @@
 <td valign="top">
 <br/><br/>
 <a name="NewsItemID"></a>
+
+<table class="news-container">
+<tr>
+<td>
+<div class="newshead">Problems with my Mail Provider.</div>
+<div class="news">
+    <p>I had a few Problems with a friend thats currently hosting the mail provided on this website. So it may be that i wont be able to get or respond from mails cat@grisu.app. <br> It also may be that I will lose this E-mail and mails wont come from me anymore. <br> I will update the mails when i know what will happen until now just look into the News hub for any changes.</p>
+    <br/><br/>
+<br/>[<a href="mailto:cat@grisu.app">Aqua</a>]
+</div>
+</td>
+</tr>
+</table>
+
+
 <table class="news-container">
 <tr>
 <td>
 <div class="newshead">Missed Network opening!</div>
 <div class="news">
 <a href="/static/img/News/MissedNet.gif" target="_blank"><img class="NewsImg" src="{{ url_for('static', filename='img/News/MissedNet.gif') }}"/></a><br/>    
-<br/>I opened up Missed Network which will now be the Hosting name for all sites i host. This came mainly becuase I didnt want to connect lain.onl to everything.<br/>This comes from the Domain getting expensive so it maybe that i change them out which I would anounce befor it happens.<br/>For now Missed Network will be the default branding for everything I, aqua, host<br/><br/>
-<br/>[<a href="mailto:cat@grisu.app">Aqua</a>]
-                </div>
+<br/>I opened up Missed Network which will now be the Hosting name for all sites i host. This came mainly becuase I didnt want to connect lain.onl to everything.<br/>This comes from the Domain getting expensive so it maybe that i change them out which I would anounce befor it happens.<br/>For now Missed Network will be the default branding for everything I, aqua, host
+[<a href="mailto:cat@grisu.app">Aqua</a>]
+</div>
 </td>
 </tr>
 </table>
+
 <p></p>
 
 <table class="news-container">
@@ -183,9 +224,9 @@
 <div class="news text-center">
 <br/>
 <a href="https://missed.lain.onl"><img alt="Hosted By Missed" border="0" src="{{ url_for('static', filename='img/KAte.gif') }}"/></a><br/><br/>
-                CS IRC:<br/>
-                #counterstrike<br/>
-                Gamesnet
+                Missed Admin:<br/>
+                aquafrostbyte<br/>
+                <a href="mailto:cat@grisu.app">Aqua</a>
             </div>
 </td>
 </tr>

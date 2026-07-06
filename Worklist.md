@@ -12,6 +12,7 @@
 ### Sub sites
 
     Cstrike:S.lain.onl
+    entries.lain.onl
 
 ## Site Specific
 

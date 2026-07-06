@@ -42,7 +42,7 @@ body {
 /* Global Links */
 a {
     font-family: verdana, sans-serif;
-    color: #bc2424;
+    color: #ff1e1e;
     text-decoration: none;
 }
 
@@ -158,4 +158,43 @@ ul.patch-notes {
 
 #x88 {
     width: 88px;
+}
+
+#guestbook input {
+    width: 139px;
+
+    margin-bottom: 4px;
+    margin-left: 1px;
+
+    background-color: #000000;
+    border: 1px #ff1e1e solid;
+    color: #ff1e1e;
+}
+
+#guestbook textarea {
+    width: 139px; 
+    height: 60px; 
+
+    margin-bottom: 4px;
+    margin-left: 1px;
+
+    resize: none; 
+    vertical-align: top;
+
+    background-color: #000000;
+    border: 1px #ff1e1e solid;
+    color: #ffffff;
+}
+
+input[type="text"]:focus, textarea:focus {
+    outline: 1px solid #ff6e6e; /* Changes the border color when selected (e.g., Red) */
+    background-color: #111; /* Optional: Slightly change the background color when typing */
+}
+
+.recent-posts strong {
+    color: #ff1e1e;
+}
+
+.recent-posts h3 {
+    color: #ff1e1e;
 }
