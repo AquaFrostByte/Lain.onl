@@ -6,6 +6,7 @@
     <!-- Points to static/css/csnet.css -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/downloads.css') }}">
+    <link href="{{ url_for('static', filename='img/feather-red.png') }}" rel="icon" type="image/x-icon"/>
 </head>
 
 <body>
@@ -29,7 +30,7 @@
             <a href="downloads">Downloads</a>
         </td>
         <td class="header-mid" width="50%" align="right">
-            <a href="http://www.counter-strike.net/">www.counter-strike.net</a>
+            <a href="https://lain.onl/">Lain.onl</a>
         </td>
     </tr>
 </table>
@@ -37,12 +38,12 @@
 <table class="header-bg" cellspacing="0" cellpadding="0" border="0">
     <tr>
         <td class="header-links" width="100%">
-            <a href="http://www.counter-strike.net/"><img src="{{ url_for('static', filename='img/main.jpg') }}" border="0" alt="Main"></a>
+            <a href="https://lain.onl/"><img alt="Main" border="0" src="{{ url_for('static', filename='img/MainBannerTest.gif') }}"/></a>
         </td>
     </tr>
     <tr>
         <td class="header-mid divider-text text-center" width="100%" height="23">
-            <b>A Counter-Terrorism Half-Life Modification</b>
+            <b>We are all connected</b>
         </td>
     </tr>
 </table>
@@ -54,13 +55,15 @@
     <table align="center" cellspacing="0" cellpadding="0" border="0">
         <tr>
             <td height="60">
-                <img src="{{ url_for('static', filename='img/left.gif') }}" alt="">
+                <img alt="" src="{{ url_for('static', filename='img/left.gif') }}"/>
                 
-                <a id="AdBannerLink" href="https://archmania.lain.onl/" target="_blank"><img id="AdBannerImg" src="{{ url_for('static', filename='img/ads/ArchMainiaAD.gif') }}" height="60px" width="auto" border="0" alt=""></a>
-
-                <img src="{{ url_for('static', filename='img/right.gif') }}" alt="">
-                <a href="http://www.gamecenter.com/Cga/?st.gc.fd..cga">
-                    <img src="{{ url_for('static', filename='img/shared/cga_vert_t.gif') }}" alt="CNET Gamecenter Alliance" border="0">
+                <a href="https://archmania.lain.onl/" id="AdBannerLink" target="_blank"><img alt="" border="0" height="60px" id="AdBannerImg" src="{{ url_for('static', filename='img/ads/ArchMainiaAD.gif') }}" width="auto"/></a>
+                
+                <img alt="" src="{{ url_for('static', filename='img/right.gif') }}"/>
+                
+                <a href="https://Neighbrthood.lain.onl">
+                
+                <img alt="Neighbrthood" border="0" src="{{ url_for('static', filename='img/Neighbrthood.png') }}"/>
                 </a>
             </td>
         </tr>
@@ -78,46 +81,33 @@
                     <td valign="top">
                         <br><br><br><br>
                         <div class="newshead">[Site Navigation]</div>
-                        <span class="divider-text">- - - - - - - - - - - - -</span><br>
 
+                            <span class="divider-text">- - - - - - - - - - - - -</span><br/>
+                        
                         <div class="news">
-                            <b>&gt;</b> <a href="template">About CS</a><br>
-                            <b>&gt;</b> <a href="template">The CS Team</a><br>
-                            <b>&gt;</b> <a href="template">The FAQ</a><br>
-                            <b>&gt;</b> <a href="template">Misc. Info.</a><br>
-                            <b>&gt;</b> <a href="template">The CS Maps</a><br>
-                            <b>&gt;</b> <a href="template">The CS Weapons</a><br>
-                            <b>&gt;</b> <a href="template">CS Mapping</a><br>
-                            <b>&gt;</b> <a href="template">Screenshots</a><br>
-                            <b>&gt;</b> <a href="template">Hosted Sites</a><br>
-                            <b>&gt;</b> <a href="template">CS Forums</a><br>
-                            <b>&gt;</b> <a href="downloads">Downloads</a>
+                            <b>&gt;</b> <a href="/">Home</a><br/>
+                            <b>&gt;</b> <a href="downloads">Downloads</a><br/>
+                            <b>&gt;</b> <a href="Cstrike:S">CStrike: Source</a><br/>
+                            <b>&gt;</b> <a href="entries">Guestbook</a><br/>
                         </div>
 
                         <p></p>
-                        <div class="newshead">[Hosted Sites]</div>
-                        <span class="divider-text">- - - - - - - - - - - - -</span><br>
-
-                        <div class="news"><a href="http://csnation.counter-strike.net/">CSNation</a></div>
-                        <span class="divider-text">The most up to date CS news site in the land.<br>- - - - - - - - - - - - - -</span>
-
-                        <div class="news"><a href="http://skins.counter-strike.net/">CSSkins</a></div>
-                        <span class="divider-text">The official CS skins site.<br>- - - - - - - - - - - - - -</span>
-
-                        <div class="news"><a href="http://server.counter-strike.net/">Counter-Server</a></div>
-                        <span class="divider-text">The complete CS server admin source of info.<br>- - - - - - - - - - - - - -</span>
-
-                        <div class="news"><a href="http://art.counter-strike.net/">Counter-Strike Art</a></div>
-                        <span class="divider-text">View art from the CS Art community.<br>- - - - - - - - - - - - - -</span>
-
-                        <div class="news"><a href="http://enquirer.counter-strike.net/">CS-National Enquirer</a></div>
-                        <span class="divider-text">The CS humor and mock news site.<br>- - - - - - - - - - - - - -</span>
-
-                        <div class="news"><a href="http://bot.counter-strike.net/realbot/">RealBot</a></div>
-                        <span class="divider-text">Advanced Counter-Strike bot.<br>- - - - - - - - - - - - - -</span>
-
-                        <div class="news"><a href="http://bot.counter-strike.net/android/">Android Bot</a></div>
-                        <span class="divider-text">Waypoint based CS bot.<br>- - - - - - - - - - - - - -</span>
+                            <div class="newshead">[Hosted Sites]</div>
+                            <span class="divider-text">- - - - - - - - - - - - -</span><br/>
+                            <div class="news"><a href="https://space.lain.onl">My Part of the Internet</a></div>
+                            <span class="divider-text">Small Rng Website I build u can explore.<br/>- - - - - - - - - - - - - -</span>
+                            <div class="news"><a href="https://files.lain.onl/">Files</a></div>
+                            <span class="divider-text">Fileserver for varius stuff.<br/>- - - - - - - - - - - - - -</span>
+                            <div class="news"><a href="https://archmania.lain.onl/">Arch Mania</a></div>
+                            <span class="divider-text">A little rythem game build in Java.<br/>- - - - - - - - - - - - - -</span>
+                            <div class="news"><a href="https://music.lain.onl/">Music</a></div>
+                            <span class="divider-text">Hosts Audio files to lissen to.<br/>- - - - - - - - - - - - - -</span>
+                            <div class="news"><a href="https://clips.lain.onl">Kiras Clips</a></div>
+                            <span class="divider-text">A platform to upload clips! (Closed Beta).<br/>- - - - - - - - - - - - - -</span>
+                            <div class="news"><a href="https://cstrike2k.lain.onl">Cstrike2k</a></div>
+                            <span class="divider-text">A Refrech of the originl Counter Strike Website.<br/>- - - - - - - - - - - - - -</span>
+                            <div class="news"><a href="https://jelly.lain.onl">Jellyfin</a></div>
+                            <span class="divider-text">A Jellyfin Server. (Closed)<br/>- - - - - - - - - - - - - -</span>
 
                     </td>
                 </tr>
@@ -138,8 +128,8 @@
                         <td>
                         
                             <div class="news">
-                                <font color="#9F9F9F" face="verdana,arial" size="4">
-                                    <b>Windows Files:</b>
+                                <font color="#ff1e1e" face="verdana,arial" size="4">
+                                    
                                 </font>
                             </div>
                         
@@ -149,38 +139,38 @@
                             
                                 <!-- Section Header -->
                                 <tr>
-                                    <th align="left" bgcolor="#1f1f1f" colspan="3">
-                                        <font color="#9B9D86" face="verdana,arial" size="2">
-                                            <b>Example Download Title</b>
+                                    <th align="left" bgcolor="#ff1e1e" colspan="3">
+                                        <font color="white" face="verdana,arial" size="2">
+                                            <b>Png2Vtf</b>
                                         </font>
                                     </th>
                                 </tr>
                             
                                 <!-- Description -->
                                 <tr>
-                                    <td bgcolor="#002000" colspan="3">
-                                        <font color="#BFBFBF" face="verdana,arial" size="1">
-                                            Description goes here.
+                                    <td bgcolor="#000000" colspan="3" style="border: #ff1e1e 1px solid">
+                                        <font color="white" face="verdana,arial" size="1" >
+                                            A silly little tool that automaticly converts Pngs in the same folder the Program is in into VTF files. These Files Are CS:S aka Source Sprays!
                                         </font>
                                     </td>
                                 </tr>
                             
                                 <!-- Column Headers -->
                                 <tr>
-                                    <th bgcolor="#1f1f1f">
-                                        <font color="#9B9D86" face="arial" size="2">
+                                    <th bgcolor="#ff1e1e">
+                                        <font color="#ffffff" face="arial" size="2">
                                             Download
                                         </font>
                                     </th>
                                 
-                                    <th bgcolor="#1f1f1f">
-                                        <font color="#9B9D86" face="arial" size="2">
+                                    <th bgcolor="#ff1e1e">
+                                        <font color="#ffffff" face="arial" size="2">
                                             Mirror
                                         </font>
                                     </th>
                                 
-                                    <th bgcolor="#1f1f1f">
-                                        <font color="#9B9D86" face="arial" size="2">
+                                    <th bgcolor="#ff1e1e">
+                                        <font color="#ffffff" face="arial" size="2">
                                             Size
                                         </font>
                                     </th>
@@ -188,29 +178,207 @@
                             
                                 <!-- Reference Entry -->
                                 <tr>
-                                    <td align="center" bgcolor="#002000">
-                                        <font color="#BFBFBF" face="verdana,arial" size="2">
-                                            <b><a href="#">example.zip</a></b>
+                                    <td align="center" bgcolor="#000000" style="border: #ff1e1e 1px solid">
+                                        <font color="#ffffff" face="verdana,arial" size="2">
+                                            <b><a href="#">png2vtf</a></b>
                                         </font>
                                     </td>
                                 
-                                    <td align="center" bgcolor="#002000">
-                                        <font color="#BFBFBF" face="arial" size="2">
-                                            Example Mirror
+                                    <td align="center" bgcolor="#000000" style="border: #ff1e1e 1px solid">
+                                        <font color="#ffffff" face="arial" size="2">
+                                            Lain.onl
                                         </font>
                                     </td>
                                 
-                                    <td align="center" bgcolor="#002000">
-                                        <font color="#BFBFBF" face="arial" size="2">
-                                            12.3 MB
+                                    <td align="center" bgcolor="#000000" style="border: #ff1e1e 1px solid">
+                                        <font color="#ffffff" face="arial" size="2">
+                                            18.6 MB
                                         </font>
                                     </td>
+                                    
+                                </tr>
+                                                                <tr>
+                                    <td align="center" bgcolor="#000000" style="border: #ff1e1e 1px solid">
+                                        <font color="#ffffff" face="verdana,arial" size="2">
+                                            <b><a href="#">png2vtf.exe</a></b>
+                                        </font>
+                                    </td>
+                                
+                                    <td align="center" bgcolor="#000000" style="border: #ff1e1e 1px solid">
+                                        <font color="#ffffff" face="arial" size="2">
+                                            Lain.onl
+                                        </font>
+                                    </td>
+                                
+                                    <td align="center" bgcolor="#000000" style="border: #ff1e1e 1px solid">
+                                        <font color="#ffffff" face="arial" size="2">
+                                            17 MB
+                                        </font>
+                                    </td>
+                                    
                                 </tr>
                             
                             </table>
                         
                             <br><br>
-                        
+
+                            <table width="100%" border="0" cellpadding="4" cellspacing="2">
+                            
+                                <!-- Section Header -->
+                                <tr>
+                                    <th align="left" bgcolor="#ff1e1e" colspan="3">
+                                        <font color="white" face="verdana,arial" size="2">
+                                            <b>ArchMania</b>
+                                        </font>
+                                    </th>
+                                </tr>
+                            
+                                <!-- Description -->
+                                <tr>
+                                    <td bgcolor="#000000" colspan="3" style="border: #ff1e1e 1px solid">
+                                        <font color="white" face="verdana,arial" size="1" >
+                                            ArchMania is a silly little Rythem game i made for school its in V1 and build in Java. Its good to try out and the maps are based on OSU! maps!
+                                        </font>
+                                    </td>
+                                </tr>
+                            
+                                <!-- Column Headers -->
+                                <tr>
+                                    <th bgcolor="#ff1e1e">
+                                        <font color="#ffffff" face="arial" size="2">
+                                            Download
+                                        </font>
+                                    </th>
+                                
+                                    <th bgcolor="#ff1e1e">
+                                        <font color="#ffffff" face="arial" size="2">
+                                            Mirror
+                                        </font>
+                                    </th>
+                                
+                                    <th bgcolor="#ff1e1e">
+                                        <font color="#ffffff" face="arial" size="2">
+                                            Size
+                                        </font>
+                                    </th>
+                                </tr>
+                            
+                                <!-- Reference Entry -->
+                                <tr>
+                                    <td align="center" bgcolor="#000000" style="border: #ff1e1e 1px solid">
+                                        <font color="#ffffff" face="verdana,arial" size="2">
+                                            <b><a href="https://mega.nz/file/NU0VlYpR#G8uJUaJBxQjYZ53EVacZs2q2FU3uB0OhnDBp9-OJzK0">ArchMania-1.0.0-LinuxBin.zip</a></b>
+                                        </font>
+                                    </td>
+                                
+                                    <td align="center" bgcolor="#000000" style="border: #ff1e1e 1px solid">
+                                        <font color="#ffffff" face="arial" size="2">
+                                            Mega
+                                        </font>
+                                    </td>
+                                
+                                    <td align="center" bgcolor="#000000" style="border: #ff1e1e 1px solid">
+                                        <font color="#ffffff" face="arial" size="2">
+                                            163.4 MB
+                                        </font>
+                                    </td>
+                                    
+                                </tr>
+                                                                <tr>
+                                    <td align="center" bgcolor="#000000" style="border: #ff1e1e 1px solid">
+                                        <font color="#ffffff" face="verdana,arial" size="2">
+                                            <b><a href="#">ArchMania-1.0.0-WinBin.zip</a></b>
+                                        </font>
+                                    </td>
+                                
+                                    <td align="center" bgcolor="#000000" style="border: #ff1e1e 1px solid">
+                                        <font color="#ffffff" face="arial" size="2">
+                                            Mega
+                                        </font>
+                                    </td>
+                                
+                                    <td align="center" bgcolor="#000000" style="border: #ff1e1e 1px solid">
+                                        <font color="#ffffff" face="arial" size="2">
+                                            115.2 MB
+                                        </font>
+                                    </td>
+                                    
+                                </tr>
+                            
+                            </table>
+
+                                                        <br><br>
+
+                            <table width="100%" border="0" cellpadding="4" cellspacing="2">
+                            
+                                <!-- Section Header -->
+                                <tr>
+                                    <th align="left" bgcolor="#ff1e1e" colspan="3">
+                                        <font color="white" face="verdana,arial" size="2">
+                                            <b>CueCue</b>
+                                        </font>
+                                    </th>
+                                </tr>
+                            
+                                <!-- Description -->
+                                <tr>
+                                    <td bgcolor="#000000" colspan="3" style="border: #ff1e1e 1px solid">
+                                        <font color="white" face="verdana,arial" size="1" >
+                                           Its a simple bash script combining Cue files into one single disk for PSX using m3u.
+
+                                            This works even if all your Roms are in one folder.
+
+                                            The Roms have to be in a specific naming order: "MyRom (Disc 1).chd" "MyRom (Disc 2).chd" "MyRom (Disc X).chd"
+
+                                            Then the Script will just auto detect them if your roms are named diffrently feel free to change the sctipt
+                                        </font>
+                                    </td>
+                                </tr>
+                            
+                                <!-- Column Headers -->
+                                <tr>
+                                    <th bgcolor="#ff1e1e">
+                                        <font color="#ffffff" face="arial" size="2">
+                                            Download
+                                        </font>
+                                    </th>
+                                
+                                    <th bgcolor="#ff1e1e">
+                                        <font color="#ffffff" face="arial" size="2">
+                                            Mirror
+                                        </font>
+                                    </th>
+                                
+                                    <th bgcolor="#ff1e1e">
+                                        <font color="#ffffff" face="arial" size="2">
+                                            Size
+                                        </font>
+                                    </th>
+                                </tr>
+                            
+                                <!-- Reference Entry -->
+                                <tr>
+                                    <td align="center" bgcolor="#000000" style="border: #ff1e1e 1px solid">
+                                        <font color="#ffffff" face="verdana,arial" size="2">
+                                            <b><a href="https://github.com/AquaFrostByte/CueCue/blob/main/make_m3u.sh">ArchMania-1.0.0-LinuxBin.zip</a></b>
+                                        </font>
+                                    </td>
+                                
+                                    <td align="center" bgcolor="#000000" style="border: #ff1e1e 1px solid">
+                                        <font color="#ffffff" face="arial" size="2">
+                                            Github
+                                        </font>
+                                    </td>
+                                
+                                    <td align="center" bgcolor="#000000" style="border: #ff1e1e 1px solid">
+                                        <font color="#ffffff" face="arial" size="2">
+                                            0.8 MB
+                                        </font>
+                                    </td>
+                            
+                            </table>
+
+                            <br><br>
                             <!-- Duplicate this entire table for another download section -->
                         
                         </td>
@@ -225,74 +393,68 @@
         </td>
 
         <td valign="top" width="100" align="left">
-            <div class="text-center"><img src="{{ url_for('static', filename='img/flash.gif') }}" alt="Flash"></div>
+            <div class="text-center"><img alt="Flash" id="DownloadImg" src="{{ url_for('static', filename='img/Emojies/foryou.png') }}"/></div>
             <div class="newshead">[Latest Files]</div>
-            <span class="divider-text">- - - - - - - - - - - - -</span><br>
-
-            <div class="news">
-                <a href="downloads">csb71full.exe</a><br>
-                <span class="divider-text">Beta 7.1 full windows installation.<br>- - - - - - - - - - - - - -</span>
-            </div><br>
-
-            <div class="news">
-                <a href="downloads">csb7071.exe</a><br>
-                <span class="divider-text">Beta 7.0 to 7.1 updater.<br>- - - - - - - - - - - - - -</span>
-            </div><br>
-
-            <div class="news">
-                <a href="downloads">cs_beta71.tar.gz</a><br>
-                <span class="divider-text">Full beta 7.1 linux server port for server ops.<br>- - - - - - - - - - - - - -</span>
-            </div><br>
-
-            <div class="news">
-                <a href="downloads">cs_beta7071.tar.gz</a><br>
-                <span class="divider-text">Beta 7.0 to 7.1 Linux Server Upgrade.<br>- - - - - - - - - - - - - -</span>
-            </div><br>
-
-            <div class="news">
-                <a href="ftp://ftp.counter-strike.net/pub/csm/cstrike_tab.zip">Counter-Strike Gamespy Tab</a><br>
-                <span class="divider-text">Custom game tab used in Gamespy to filter only CS games.<br>- - - - - - - - - - - - - -</span>
-            </div><br>
-
-            <div class="news">
-                <a href="ftp://ftp.counter-strike.net/pub/csm/cstrikefgd.zip">CS Mapping .Fgd file</a><br>
-                <span class="divider-text">File for CS mappers to utilize custom CS entities.<br>- - - - - - - - - - - - - -</span>
-            </div><br>
-
+                <span class="divider-text">- - - - - - - - - - - - -</span><br/>
+                <div class="news">
+                <a href="downloads">png2vtf</a><br/>
+                <span class="divider-text">A Program that turns PNG files into Source Sprays. (Linux)<br/>- - - - - - - - - - - - - -</span>
+                </div><br/>
+                <span class="divider-text">- - - - - - - - - - - - -</span><br/>
+                <div class="news">
+                <a href="downloads">png2vtf.exe</a><br/>
+                <span class="divider-text">A Program that turns PNG files into Source Sprays. (Windows)<br/>- - - - - - - - - - - - - -</span>
+                </div><br/>
+                <span class="divider-text">- - - - - - - - - - - - -</span><br/>
+                <div class="news">
+                <a href="downloads">make_m3u.sh</a><br/>
+                <span class="divider-text">A script to combine ps1 games into 1 Disc. (Linux)<br/>- - - - - - - - - - - - - -</span>
+                </div><br/>
+                <span class="divider-text">- - - - - - - - - - - - -</span><br/>
+                <div class="news">
+                <a href="downloads">ArchMania-1.0.0-LinuxBin</a><br/>
+                <span class="divider-text">Cool little rythem game. (Linux)<br/>- - - - - - - - - - - - - -</span>
+                </div><br/>
+                <span class="divider-text">- - - - - - - - - - - - -</span><br/>
+                <div class="news">
+                <a href="downloads">ArchMania-1.0.1-WinBin</a><br/>
+                <span class="divider-text">Cool little rythem game with fix for Win. (Windows)<br/>- - - - - - - - - - - - - -</span>
+                </div><br/>
             <p></p>
             <table border="0" cellpadding="0" cellspacing="0" width="125" height="125">
                 <tr>
-                    <td><br><a href="http://service.bfast.com/bfast/click?bfmid=1476905&siteid=29942293&bfpage=play_games"><img src="{{ url_for('static', filename='img/shared/gcplaygames125x125.gif') }}" width="125" height="125" border="0" alt="Play Games!"></a></td>
+                    <td><br/><div id="Friends"></div></td>
                 </tr>
-            </table>
-
-            <p></p>
+            </table> <p></p>
             <div class="newshead">[Network]</div>
             <span class="divider-text">- - - - - - - - - - - - -</span><br>
             <div class="news text-center">
                 <br>
-                <a href="http://www.stomped.com"><img src="{{ url_for('static', filename='img/stom.gif') }}" border="0" alt="Hosted By STOMPED"></a><br><br>
-                CS IRC:<br>
-                #counterstrike<br>
-                Gamesnet
+                <a href="https://missed.lain.onl"><img alt="Hosted By Missed" border="0" src="{{ url_for('static', filename='img/KAte.gif') }}"/></a><br/><br/>
+                Missed Admin:<br/>
+                aquafrostbyte<br/>
+                <a href="mailto:cat@grisu.app">Aqua</a>
             </div>
         </td>
     </tr>
 </table>
 
-<table class="footer-bg" width="100%" cellspacing="0" cellpadding="0" border="0">
-    <tr>
-        <td class="header-mid" width="100%" height="22">
-            &nbsp;<a href="/">Main</a> |
+<table border="0" cellpadding="0" cellspacing="0" class="footer-bg" width="100%">
+<tr>
+<td class="header-mid" height="22" width="100%">
+             <a href="/">Main</a> |
             <a href="template">About</a> |
             <a href="template">Screenshots</a> |
             <a href="template">Forums</a> |
-            <a href="downloads">Downloads</a> | - &copy; 1999-2000 : Counter-Strike -- [html &amp; design by <a href="mailto:cliffe@counter-strike.net">Cliffe</a>] [<a href="ftp://ftp.counter-strike.net/pub/csm/csfont.zip">CS Font</a>] [<a href="link">Linking</a>]
+            <a href="downloads">Downloads</a> | - © 2026 : Lain.onl -- [html &amp; design by <a href="mailto:cat@grisu.app">Aqua</a>] [<a href="https://files.lain.onl/counter-strike.zip">CS Font</a>]
         </td>
-    </tr>
+</tr>
 </table>
 
 </body>
 
 <script src="{{ url_for('static', filename='js/AdBanner.js') }}"></script>
+<script src="{{ url_for('static', filename='js/Friends.js') }}"></script>
+<script src="{{ url_for('static', filename='js/Title.js') }}"></script>
+
 </html>
