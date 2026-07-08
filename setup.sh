@@ -4,7 +4,7 @@
 set -e
 
 # Define variables these can be changed if u want but i wouldnt recommend it
-SERVICE_NAME="cstrike2k"
+SERVICE_NAME="lainonl"
 SERVICE_FILE="/etc/systemd/system/${SERVICE_NAME}.service"
 PROJECT_DIR=$(pwd)
 VENV_DIR="${PROJECT_DIR}/.venv"

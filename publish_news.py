@@ -3,7 +3,7 @@ import requests
 
 # Set your server configuration here
 API_URL = "http://192.168.2.22:5678/api/news"  # Update this to your live domain when deployed
-API_KEY = "47251f263124bf44e8f8e2b5e3637f971e0b525ed436294261a8a4d26f691765"  # Match this with the server environment variable
+API_KEY = "API"  # Match this with the server environment variable
 
 @click.command()
 @click.option('--title', prompt='Article Title')
