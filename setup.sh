@@ -23,7 +23,7 @@ User=${USER}
 WorkingDirectory=${PROJECT_DIR}
 Environment="PATH=${VENV_DIR}/bin"
 # Bound to 0.0.0.0 to allow external traffic
-ExecStart=${VENV_DIR}/bin/gunicorn --workers 3 --bind 0.0.0.0:5000 app:app
+ExecStart=${VENV_DIR}/bin/gunicorn --workers 3 --bind 0.0.0.0:5123 app:app
 
 [Install]
 WantedBy=multi-user.target
@@ -43,4 +43,4 @@ sudo systemctl enable ${SERVICE_NAME}
 echo "Starting/Restarting ${SERVICE_NAME}..."
 sudo systemctl restart ${SERVICE_NAME}
 
-echo "Done! Your app is now live and accessible externally on port 5000."
+echo "Done! Your app is now live and accessible externally on port 5123."

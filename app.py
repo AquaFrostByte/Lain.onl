@@ -131,4 +131,5 @@ def add_news_via_api():
     return jsonify({"message": "Successfully published article remotely!"}), 200
 
 if __name__ == '__main__':
+    print(API_KEY)
     app.run(debug=True, host="0.0.0.0", port=5678)

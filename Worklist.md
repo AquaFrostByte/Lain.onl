@@ -12,12 +12,12 @@
 ### Sub sites
 
     Cstrike:S.lain.onl
-    entries.lain.onl
+    entries.lain.onl DONE!
 
 ## Site Specific
 
-### Downloads
-    Everything in latest files needs to be added
+### Downloads DONE!
+    Everything in latest files needs to be added DONE!
 
 ## Fetures
 
